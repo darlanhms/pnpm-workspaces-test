@@ -1,0 +1,16 @@
+{
+    "extends": "@pnpm-workspaces-test/tsconfig/node-app",
+    "compilerOptions": {
+        "isolatedModules": false,
+        "declaration": false,
+        "outDir": "./dist",
+        "baseUrl": "./src",
+    },
+    "include": [
+        "src/*.ts",
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+ }
