@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "pnpm run --filter \"./packages/**\" --parallel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
