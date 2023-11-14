@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import './App.css';
-import { Button } from '@pnpm-workspaces-test/ui';
 import { sum } from '@pnpm-workspaces-test/utils';
 
 import logo from './logo.svg';
 
+import './App.css';
+
 function App() {
+    const [counter, setCounter] = useState(sum(1, 1));
+
     return (
         <div className="App">
             <header className="App-header">
@@ -15,9 +17,9 @@ function App() {
                     Edit <code>src/App.tsx</code> and save to reload.
                 </p>
                 <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
+                    Learn React - {counter}
                 </a>
-                <Button>It worked! {sum(1, 1)}</Button>
+                <button onClick={() => setCounter(counter + 1)}>Increase counter</button>
             </header>
         </div>
     );
