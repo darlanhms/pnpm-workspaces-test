@@ -15,7 +15,8 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "@pnpm-workspaces-test/ui": "workspace:*",
-    "@pnpm-workspaces-test/utils": "workspace:*"
+    "@pnpm-workspaces-test/utils": "workspace:*",
+    "@pnpm-workspaces-test/tsconfig": "workspace:*"
   },
   "scripts": {
     "start": "react-scripts start",
